@@ -1,12 +1,5 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Kaldi"
-
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
-
+# Change "Kaldi" to your site name
+title = "ReviByte"
 [params]
 images = ["img/og-image.jpg"]
+description = "ReviByte Technology Reviews delivers honest insights on the latest gadgets, smartphones, apps, and innovations helping you make smarter tech choices"
