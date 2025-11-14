@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Kaldi"
+title = "ReviByte"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
@@ -10,3 +10,4 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
 images = ["img/og-image.jpg"]
+description = "ReviByte Technology Reviews delivers honest insights on the latest gadgets, smartphones, apps, and innovations helping you make smarter tech choices"
