@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" class="no-js">
 <head>
-  {{ partial "head.html" . }}
+  {{- partial "head.html" . -}}
 </head>
 <body>
-  <!-- REVIBYTE FIXED HEADER -->
+
+  <!-- YOUR PERFECT REVIBYTE HEADER -->
   <header class="bg-white pv3 ph4 shadow-2 fixed-top w-100 z-999" style="position:fixed;top:0;left:0;">
     <div class="mw8 center flex items-center justify-between">
       <div class="flex items-center">
@@ -25,13 +26,18 @@
     </div>
   </header>
 
+  <!-- Push content down -->
   <div style="margin-top: 90px;"></div>
 
-  <main>
+  <!-- Main content -->
+  <div class="content">
     {{ block "main" . }}{{ end }}
-  </main>
+  </div>
 
-  {{ partial "footer.html" . }}
-  {{ partial "scripts.html" . }}
+  <!-- Footer -->
+  {{- partial "footer.html" . -}}
+
+  <!-- Scripts -->
+  {{- partial "scripts.html" . -}}
 </body>
 </html>
