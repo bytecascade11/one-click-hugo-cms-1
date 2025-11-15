@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+
+  <!-- REVIBYTE HEADER — ONLY ONE THAT SHOWS -->
+  <header class="bg-white pv3 ph4 shadow-2 fixed w-100 z-999" style="position:fixed;top:0;left:0;">
+    <div class="mw8 center flex items-center justify-between">
+      <a href="/" class="dib mr4">
+        <img src="/img/logo.svg" alt="ReviByte" class="w3">
+      </a>
+      <nav class="dn db-l">
+        <a href="/" class="link black f5 f4-l dib mr4 hover-primary">Home</a>
+        <a href="/samsung" class="link black f5 f4-l dib mr4 hover-primary">Samsung</a>
+        <a href="/apple" class="link primary f5 f4-l dib mr4 b hover-primary">Apple</a>
+        <a href="/android" class="link black f5 f4-l dib mr4 hover-primary">Android</a>
+        <a href="/ai" class="link black f5 f4-l dib mr4 hover-primary">AI</a>
+        <a href="/reviews" class="link black f5 f4-l dib mr4 hover-primary">Reviews</a>
+        <a href="/games" class="link black f5 f4-l dib mr4 hover-primary">Games</a>
+        <a href="/technology" class="link black f5 f4-l dib hover-primary">Technology</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="margin-top:90px;"></div>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{- partial "footer.html" . -}}
+  {{- partial "scripts.html" . -}}
+</body>
+</html>
