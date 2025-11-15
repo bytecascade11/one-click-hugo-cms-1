@@ -29,3 +29,22 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {{ end }}
 </head>
+<style>
+  nav[data-nav], .nav-menu { display: none !important; } /* Hide old Kaldi nav */
+</style>
+<header class="bg-white pv3 ph4 shadow-2 fixed w-100 z-10" style="position:fixed;top:0;left:0;">
+  <div class="mw8 center flex items-center justify-between">
+    <a href="/" class="dib mr4"><img src="/img/logo.svg" alt="ReviByte" class="w3"></a>
+    <nav class="dn db-l">
+      <a href="/" class="link black f5 dib mr3">Home</a>
+      <a href="/samsung" class="link black f5 dib mr3">Samsung</a>
+      <a href="/apple" class="link primary f5 dib mr3 b">Apple</a>
+      <a href="/android" class="link black f5 dib mr3">Android</a>
+      <a href="/ai" class="link black f5 dib mr3">AI</a>
+      <a href="/reviews" class="link black f5 dib mr3">Reviews</a>
+      <a href="/games" class="link black f5 dib mr3">Games</a>
+      <a href="/technology" class="link black f5 dib">Technology</a>
+    </nav>
+  </div>
+</header>
+<script>document.body.style.paddingTop = '90px';</script>
